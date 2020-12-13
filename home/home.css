@@ -3,6 +3,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
 .intro {
@@ -11,6 +12,7 @@
 }
 
 .intro_text {
+  margin-top: 50%;
   position: absolute;
   color: white;
   background-color: antiquewhite;
