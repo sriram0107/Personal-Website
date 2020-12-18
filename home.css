@@ -6,16 +6,28 @@
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
 .intro {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
 }
 
 .intro_text {
-  margin-top: 50%;
-  position: absolute;
   color: white;
   background-color: antiquewhite;
+}
+
+.skills {
+  height: 100vh;
+  width: 100vw;
 }
 p {
   border-right: solid 3px rgb(255, 255, 255);
