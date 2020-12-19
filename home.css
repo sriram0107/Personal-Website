@@ -131,7 +131,6 @@ body {
 }
 canvas {
   display: block;
-  vertical-align: bottom;
 } /* ---- particles.js container ---- */
 #particles-js {
   position: absolute;
