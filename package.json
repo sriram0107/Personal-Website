@@ -9,6 +9,7 @@
   "author": "Sriram Sathish",
   "license": "ISC",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "particle.js": "^1.0.7"
   }
 }
