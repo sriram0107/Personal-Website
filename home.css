@@ -32,6 +32,10 @@ i {
   display: none;
 }
 
+.fade_scroll {
+  opacity: 1;
+}
+
 .flip-container:hover {
   background-color: green;
 }
@@ -48,9 +52,29 @@ i {
 }
 
 .front {
-  z-index: -1;
-  transform: rotateY(0deg);
-  backface-visibility: hidden;
+  opacity: 1;
+  font-size: large;
+  height: auto;
+  width: auto;
+}
+
+.front:hover {
+  background-color: rgb(51, 52, 100);
+  border-radius: 5px;
+}
+@keyframes tile {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.front i:hover {
+  opacity: 0;
+  border-radius: 5px;
+  animation: tile 0.5s;
 }
 
 .back {
@@ -98,24 +122,114 @@ i {
 }
 
 .skills {
-  height: fit-content;
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    330deg,
+    #000000,
+    #111316,
+    #121420,
+    #0f1627,
+    #0a1332,
+    #05063c,
+    #0e003d,
+    #041f65,
+    #051c58
+  );
+  background-size: 1400% 1400%;
+
+  -webkit-animation: gradient 8s ease infinite;
+  -moz-animation: gradient 8s ease infinite;
+  animation: gradient 8s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project_desc {
+  width: 45vw;
+  height: 100%;
+}
+.project_demo {
+  width: 45vw;
+  height: auto;
+}
+.demo {
+  height: 100%;
+  width: 30vw;
+}
+
+@media (max-width: 768px) {
+  .project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project_demo {
+    width: 100vw;
+    height: 90vh;
+  }
+  .demo {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .skill_heading {
   font-size: 100px;
-  color: darkblue;
-  height: 25%;
+  color: white;
+  height: fit-content;
 }
 
 .sub_skill {
   font-size: 70px;
-  color: darkblue;
+  color: white;
 }
 
 p {
