@@ -1,16 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 
-* {
+/* * {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+} */
+
+* {
+  margin-bottom: 0px;
 }
 
 .icons {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  overflow-y: scroll;
   align-items: center;
 }
 
@@ -19,69 +27,84 @@ i {
   margin: 25px;
 }
 
-.panel {
+/* .panel {
   height: 100vh;
   width: 100vw;
+} */
+#pinContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
+.panel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* .zero {
+  background-color: aqua;
+}
+.one {
+  background-color: rgb(0, 3, 3);
+}
+
+.two {
+  background-color: aqua;
+}
+
+.three {
+  background-color: rgb(0, 100, 100);
+} */
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
 }
 
-.flip-container {
-  display: none;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
 }
 
-.fade_scroll {
-  opacity: 1;
-}
-
-.flip-container:hover {
-  background-color: green;
-}
-/* .flip-container:hover .card,
-.flip-container.hover .card {
-  transform: rotateY(180deg);
-} */
-
-.card {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  transition: 0.6s;
-  transform-style: preserve-3d;
+.flip-card-inner {
   position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
-.front {
-  opacity: 1;
-  font-size: large;
-  height: auto;
-  width: auto;
-}
-
-.front:hover {
-  background-color: rgb(51, 52, 100);
-  border-radius: 5px;
-}
-@keyframes tile {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-.front i:hover {
-  opacity: 0;
-  border-radius: 5px;
-  animation: tile 0.5s;
-}
-
-.back {
-  background-color: gray;
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  font-size: auto;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  background-color: transparent;
+}
+
 /* ::-webkit-scrollbar-thumb {
   background: #ff0000;
 } */
@@ -95,6 +118,8 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .intro_text {
@@ -121,10 +146,47 @@ i {
   font-size: xx-large;
 }
 
+.lang {
+  background: linear-gradient(
+    330deg,
+    #000000,
+    #111316,
+    #121420,
+    #0f1627,
+    #0a1332,
+    #05063c,
+    #0e003d,
+    #041f65,
+    #051c58
+  );
+  background-size: 1400% 1400%;
+
+  -webkit-animation: gradient 8s ease infinite;
+  -moz-animation: gradient 8s ease infinite;
+  animation: gradient 8s ease infinite;
+}
+.tech {
+  background: linear-gradient(
+    330deg,
+    #000000,
+    #111316,
+    #121420,
+    #0f1627,
+    #0a1332,
+    #05063c,
+    #0e003d,
+    #041f65,
+    #051c58
+  );
+  background-size: 1400% 1400%;
+
+  -webkit-animation: gradient 8s ease infinite;
+  -moz-animation: gradient 8s ease infinite;
+  animation: gradient 8s ease infinite;
+}
 .skills {
-  height: 100vh;
-  width: 100vw;
   display: flex;
+  overflow-y: hidden;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -185,6 +247,7 @@ i {
 .projects {
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 .project {
   display: flex;
@@ -218,6 +281,10 @@ i {
   .demo {
     height: 100%;
     width: 100%;
+  }
+  i {
+    font-size: 100px;
+    margin: 25px;
   }
 }
 
