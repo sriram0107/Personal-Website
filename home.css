@@ -10,10 +10,14 @@
   margin-bottom: 0px;
 }
 
+.rails {
+  height: 150px;
+  width: 150px;
+}
+
 .icons {
   height: 100vh;
   width: 100vw;
-  padding-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -68,7 +72,7 @@ i {
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 300px;
+  height: 160px;
   perspective: 1000px;
 }
 
@@ -146,7 +150,7 @@ i {
   width: 100vw;
 }
 
-.a {
+a {
   text-decoration: none;
   color: white;
 }
@@ -157,6 +161,11 @@ i {
 }
 
 .lang {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(
     330deg,
     #000000,
@@ -315,12 +324,38 @@ i {
   z-index: -1;
 }
 
+.chatcord {
+  background-image: url("./demos/ccord.png");
+  background-size: 100% 100%;
+  backdrop-filter: blur(5px);
+}
+
+.shopconnect {
+  background-image: url("./demos/shp.jpg");
+  background-size: 100% 100%;
+  backdrop-filter: blur(5px);
+}
+
+.ecom {
+  background-image: url("./demos/ecom.png");
+  background-size: 100% 100%;
+}
+
+.ml {
+  background-image: url("./demos/ml.png");
+  background-size: 100% 100%;
+}
+
 @media (max-width: 768px) {
   .project {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+  }
+  .rails {
+    height: 100px;
+    width: 100px;
   }
   .project_demo {
     width: 100vw;
@@ -435,4 +470,97 @@ canvas {
 }
 .count-particles {
   border-radius: 0 0 3px 3px;
+}
+
+.work_exp_1 {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("demos/manipal.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.work_exp_2 {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    270deg,
+    #312e32,
+    #443449,
+    #6b377b,
+    #80279b,
+    #5f0d78,
+    #2e093a,
+    #52295f,
+    #885199,
+    #885199
+  );
+  background-size: 1800% 1800%;
+
+  -webkit-animation: cpbg 30s ease infinite;
+  -moz-animation: cpbg 30s ease infinite;
+  animation: cpbg 30s ease infinite;
+  /* background-image: url("demos/manipal.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+}
+
+.exp_text {
+  font-size: medium;
+}
+
+@-webkit-keyframes cpbg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes cpbg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cpbg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.duration {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  position: absolute;
+  top: 4%;
+  left: 4%;
 }

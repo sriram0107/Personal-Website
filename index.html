@@ -11,16 +11,6 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700italic'
         rel='stylesheet' type='text/css'>
     <style>
-        /* body {
-            font-family: "Source Sans Pro", Arial, sans-serif;
-            background-color: #c7e1ff;
-            font-size: 13px;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            margin: 0;
-            padding: 0;
-            color: #fff;
-        } */
-
         body,
         html {
             height: 100%
@@ -120,6 +110,14 @@
                     </div>
                     <div class="flip-card">
                         <div class="flip-card-inner">
+                            <div class="flip-card-front"><i class="devicon-ruby-plain colored"></i></div>
+                            <div class="flip-card-back">
+                                <h1>Ruby</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
                             <div class="flip-card-front"><img class="racket" src="./demos/rack.png"/></div>
                             <div class="flip-card-back">
                                 <h1>Racket</h1>
@@ -190,6 +188,14 @@
                     </div>
                     <div class="flip-card">
                         <div class="flip-card-inner">
+                            <div class="flip-card-front"><img class="rails" src="./demos/rails.jpg"/></div>
+                            <div class="flip-card-back">
+                                <h1>Ruby on Rails</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
                             <div class="flip-card-front"><i class="devicon-mocha-plain colored"></i></div>
                             <div class="flip-card-back">
                                 <h1>Mocha</h1>
@@ -230,7 +236,7 @@
                     </div>
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-handlebars-plain colored"></i></div>
+                            <div class="flip-card-front"><i class="devicon-handlebars-plain"></i></div>
                             <div class="flip-card-back">
                                 <h1>Handlebars</h1>
                             </div>
@@ -244,26 +250,74 @@
                             </div>
                         </div>
                     </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front"><i class="devicon-docker-plain colored"></i></div>
+                            <div class="flip-card-back">
+                                <h1>Docker</h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
-
-        <div class="panel second" style="background:#333;">
+        <div class="panel skills project_intro_page">
+            <div class="skill_heading">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="skill_heading">Projects</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <i>&#9756</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel second" style="background:#555;">
             <div class="projects">
                 <div class="row">
-                    <div class="project"><a target="_blank" href="https://github.com/sriram0107/ChatCord">ChatCord</a></div>
-                    <div class="project"><a target="_blank" href="https://github.com/sriram0107/ShopConnect">ShopConnect</a></div>
-                    <div class="project"><a target="_blank" href="https://github.com/sriram0107/E-Commerce_Management">E-Commerce Database Management</a></div>
+                    <div class="project chatcord"><a target="_blank" href="https://github.com/sriram0107/ChatCord">ChatCord</a></div>
+                    <div class="project shopconnect"><a target="_blank" href="https://github.com/sriram0107/ShopConnect">ShopConnect</a></div>
+                    <div class="project ecom"><a target="_blank" href="https://github.com/sriram0107/E-Commerce_Management">E-Commerce Database Management</a></div>
                 </div>
                 <div class="row">
-                         <div class="project"><a target="_blank" href="https://github.com/sriram0107/ML-Algos">ML Algorithms</a></div>
+                         <div class="project ml"><a target="_blank" href="https://github.com/sriram0107/ML-Algos">ML Algorithms</a></div>
                         <div class="project">Coming Soon..</div>
                         <div class="project">More Projects</div>
                 </div>
             </div>
         </div>
+        <div class="panel skills work_intro">
+            <div class="skill_heading">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="skill_heading">Work Experience</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <i>&#9758</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="panel third" style="background:#555;">
-            <h1>Work Experience</h1>
+            <div class="duration">7th July 2019 - 11th July 2019</div>
+            <div class="work_exp_1">
+                Summer Intern at Manipal University Dubai<br>
+                <div class="exp_text">Part of a week long program with the Electronics Department at Manipal Dubai<br/>
+                </div>
+            </div>
+        </div>
+        <div class="panel third_next" style="background:#555;">
+            <div class="duration">1st Oct 2020 - <b>Present</b></div>
+            <div class="work_exp_2">
+                Open Source Developer @ CodePrentice<br>
+                <div class="exp_text">Part of the Web Development and Keras Teams<br />
+                </div>
+            </div>
         </div>
         <div class="panel fourth" style="background:#777;">
             <div class="resume">
@@ -298,8 +352,11 @@
             var wipeAnimation = new TimelineMax()
                 .fromTo("div.panel.lang", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone, duration: 1 })  // in from right
                 .fromTo("div.panel.tech", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone, duration: 1 })  // in from right
+                .fromTo("div.panel.project_intro_page", 1, { x: "-100%" }, { x: "0%", ease: Linear.easeNone, duration: 1 })  // in from left
                 .fromTo("div.panel.second", 1, { x: "-100%" }, { x: "0%", ease: Linear.easeNone, duration: 1 })  // in from left
+                .fromTo("div.panel.work_intro", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone, duration: 1 }) 
                 .fromTo("div.panel.third", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone, duration: 1 })  // in from right
+                .fromTo("div.panel.third_next", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone, duration: 1 })  // in from right
                 .fromTo("div.panel.fourth", 1, { y: "-100%" }, { y: "0%", ease: Linear.easeNone }) // in from top
             // create scene to pin and link animation
             new ScrollMagic.Scene({
