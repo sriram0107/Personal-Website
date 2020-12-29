@@ -138,18 +138,40 @@ i {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
+.fourth {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
 
 .resume {
-  background-color: gray;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   padding: 10px;
-  height: fit-content;
+  height: 20vh;
   width: 100vw;
 }
 
+#myVideo {
+  position: absolute;
+}
+.resume_text {
+  font-size: 100px;
+}
+.github_text {
+  font-size: 200px;
+}
+.linkedin_text {
+  font-size: 200px;
+}
 a {
   text-decoration: none;
   color: white;
