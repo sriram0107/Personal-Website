@@ -1,16 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 
-/* * {
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-} */
-
+* {
+  margin-bottom: 0px;
+}
 body,
 html {
-  height: 100%;
+  height: 100vh;
 }
-
 #pinContainer {
   width: 100%;
   height: 100%;
@@ -31,10 +27,6 @@ b {
   transform: translateY(-50%);
   position: relative;
   font-size: 30px;
-}
-
-* {
-  margin-bottom: 0px;
 }
 
 .rails {
