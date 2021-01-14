@@ -417,9 +417,10 @@ a {
 }
 
 .skill_heading {
-  font-size: 100px;
+  font-size: 90px;
   color: white;
   height: fit-content;
+  text-align: center;
 }
 
 .sub_skill {
