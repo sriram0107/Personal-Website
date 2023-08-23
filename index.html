@@ -7,290 +7,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="./home.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="intro" style="height:100%;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#exp">Experiences</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div id="particles-js"></div>
+    <div class="intro">
         <h1 class="intro_text">Hey There! I am
             <span class="txt-rotate" data-period="500"
-                data-rotate='[ "Sriram Sathish", "a Web Developer", "a Creator", "a Freshman @ UWaterloo"]'></span>
+                data-rotate='[ "Sriram Sathish", "a Software Engineer", "a Junior @ UWaterloo"]'></span>
         </h1>
+    </div>
+    <div id="about" class="panel" class="jumbotron">
+        <h1 class="display-4">About Me</h1>
+        <div class="d-flex flex-col">
+            <div>
+                👋 Hi there! I'm Sriram, a highly motivated Software Engineer with a strong foundation in Computer Science, currently in my third year of studies. My journey into the world of technology began with a burning curiosity and a determination to bring innovative ideas to life.
+                <br> <br>
+                <text class="about_heading">🚀 Passion for Product Building:</text> <br>
+                I have always been fascinated by the process of transforming abstract concepts into tangible products that impact lives. Throughout my academic journey, I have actively sought opportunities to translate my theoretical knowledge into real-world applications. This drive has led me to work on a range of exciting projects, from developing intuitive user interfaces to crafting robust backend systems. With each project, I have honed my skills in turning ideas into functional, user-centric products.
+                <br> <br>
+                <text class="about_heading">💼 2+ Years of Hands-on Experience:</text> <br>
+                My journey as a Software Engineer began even before my formal university education. Over the past two years, I've had the privilege of diving headfirst into the world of software development. I've collaborated with diverse teams, participated in hackathons, and contributed to open-source projects. These experiences have equipped me with a deep understanding of various programming languages, software development methodologies, and the importance of collaborative teamwork.
+                </div>
+            <img src="./demos/about.jpg" alt=""/>
+        </div>
         <div id="particles-js"></div>
     </div>
-    <div id="pinContainer">
-        <div class="panel skills first">
-            <div class="skill_heading">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="skill_heading">Skills</div>
-                        </div>
-                        <div class="flip-card-back">
-                            <i>&#9758</i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="exp" class="panel" class="jumbotron">
+        <h1 class="display-4">Experiences</h1>
+        <div class="d-flex flex-row">
+            <div class="job">job1</div>
+            <div class="job">job2</div>
+            <div class="job">job3</div>
         </div>
-        <div class="panel lang">
-            <section>
-                <div class="icons">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-javascript-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>JavaScript</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-typescript-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>TypeScript</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-cplusplus-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>C++</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-c-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>C</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-python-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>Python</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-ruby-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>Ruby</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><img class="racket" src="./demos/rack.png"/></div>
-                            <div class="flip-card-back">
-                                <h1>Racket</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div id="particles-js"></div>
+    </div>
+    <div id="skills" class="panel" class="jumbotron">
+        <h1 class="display-4">Skills</h1>
+        <div>
         </div>
-        <div class="panel tech">
-            <section>
-                <div class="icons">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-html5-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>HTML</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-css3-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>CSS</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-bootstrap-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>Bootstrap</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-react-original colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>React.js</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-redux-original colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>Redux</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-nodejs-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>node.js</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-express-original colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>express.js</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-mocha-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>Mocha</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-git-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>Git</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-mongodb-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>MongoDB</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-mysql-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>MYSQL</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-npm-original-wordmark colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>NPM</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-handlebars-plain"></i></div>
-                            <div class="flip-card-back">
-                                <h1>Handlebars</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-jquery-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>JQuery</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="devicon-docker-plain colored"></i></div>
-                            <div class="flip-card-back">
-                                <h1>Docker</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div id="particles-js"></div>
+    </div>
+    <div id="contact" class="panel" class="jumbotron">
+        <h1 class="display-4">Contact Me</h1>
+        <div class="d-flex flex-col">
+
+            <i class="devicon-linkedin-plain colored"></i>
+            
+            <a href="https://github.com/sriram0107" target="_new"><i class="devicon-github-original colored"></i></a>
+          
         </div>
-        <div class="panel skills project_intro_page">
-            <div class="skill_heading">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="skill_heading">Projects</div>
-                        </div>
-                        <div class="flip-card-back">
-                            <i>&#9756</i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="panel second" style="background:#555;">
-            <div class="projects">
-                <div class="row">
-                    <div class="project chatcord"><a target="_blank" href="https://github.com/sriram0107/ChatCord">ChatCord</a></div>
-                    <div class="project shopconnect"><a target="_blank" href="https://github.com/sriram0107/ShopConnect"></a></div>
-                    <div class="project ecom"><a target="_blank" href="https://github.com/sriram0107/E-Commerce_Management">E-Commerce Database Management</a></div>
-                </div>
-                <div class="row">
-                         <div class="project ml"><a target="_blank" href="https://github.com/sriram0107/ML-Algos">ML Algorithms</a></div>
-                        <div class="project">Coming Soon..</div>
-                      <div class="project"><a target="_blank" href="https://github.com/sriram0107/">More Projects</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="panel skills work_intro">
-            <div class="skill_heading">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="skill_heading">Work Experience</div>
-                        </div>
-                        <div class="flip-card-back">
-                            <i>&#9758</i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="panel third" style="background:#555;">
-            <div class="duration">7th July 2019 - 11th July 2019</div>
-            <div class="work_exp_1">
-                Summer Intern at Manipal University Dubai<br>
-                <div class="exp_text">Part of a week long program with the Electronics Department at Manipal Dubai<br/>
-                </div>
-            </div>
-        </div>
-        <div class="panel third_next" style="background:#555;">
-            <div class="duration">1st Oct 2020 - <b>Present</b></div>
-            <div class="work_exp_2">
-                Open Source Developer @ CodePrentice<br>
-                <div class="exp_text">Part of the Web Development and Keras Teams<br />
-                </div>
-            </div>
-        </div>
-        <div class="panel fourth intro" style="background:#777;">
-            <video autoplay muted loop id="myVideo">
-                <source src="./icons/OMSBG5.mov" type="video/mp4">
-            </video>
-            <div class="resume">
-                <a href="https://drive.google.com/file/d/15atabPLTqxLX7k3Xkt4Nybk9PWgLrITJ/view?usp=sharing"
-                    target="_new" class="resume_text">Resume</a>
-                <a href="https://github.com/sriram0107" target="_new"><i class="devicon-github-original colored github_text"></i></a>
-                <a href="https://www.linkedin.com/in/sriram-sathish-1926a61b1/" target="_new"><i
-                        class="devicon-linkedin-plain colored linkedin_text"></i></a>
-            </div>
-        </div>
+        <div id="particles-js"></div>
     </div>
     <!-- <script src="./js/typewriter.js"></script>
     <script src="./js/part-ex.js"></script>
@@ -312,12 +101,6 @@
     <script src="./js/part-ex.js" type="text/javascript"></script>
     <script src="./js/stats.js" type="text/javascript"></script>
     <script src="./js/home.js" type="text/javascript"></script>
-    <script src="./js/scrollmagic_dependencies/scrollmagic.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="./js/scrollmagic_dependencies/tweenmax.min.js" type="text/javascript"></script>
-    <script type="text/javascript"
-        src="./js/scrollmagic_dependencies/animation.gsap.js"></script>
-    <script src="./js/scrolleffect.js" type="text/javascript"></script>
 </body>
 
 </html>
