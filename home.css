@@ -195,7 +195,6 @@ i {
   width: 100% !important;
   margin: 10px;
 }
-
 .card-container-custom {
   display: flex;
   flex-direction: column;
@@ -454,6 +453,11 @@ a {
   .racket {
     height: 100px;
     width: 100px;
+  }
+
+  .panel {
+    padding: 40px;
+    margin: 10px;
   }
 }
 
