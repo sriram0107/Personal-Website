@@ -9,6 +9,10 @@ html {
   height: 100vh;
 }
 
+i {
+  margin-top: 0px !important;
+}
+
 canvas {
   display: none !important;
 }
@@ -27,8 +31,7 @@ canvas {
   border-radius: 10px;
   padding: 100px;
   margin: 20px !important;
-  margin-right: 20px !important;
-  width: 100%;
+  width: calc(100vw - 40px);
 }
 
 img {
@@ -187,6 +190,24 @@ i {
   padding: 0px;
   overflow: hidden;
 }
+
+.card {
+  width: 100% !important;
+  margin: 10px;
+}
+
+.card-container-custom{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title-custom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 
 .resume {
   z-index: 1;
