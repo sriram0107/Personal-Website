@@ -196,7 +196,7 @@ i {
   margin: 10px;
 }
 
-.card-container-custom{
+.card-container-custom {
   display: flex;
   flex-direction: column;
 }
